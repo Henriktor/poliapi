@@ -21,7 +21,7 @@ for dict_item in resp_dict:
     print('\n' + 'Händelse')
     print (dict_item['location']['name'],dict_item['datetime'],dict_item['summary'])
 
-#file = open("resp_text.txt", "w")
-#file.write(resp.text)
-#file.close()
+file = open("resp_text.txt", "a")
+file.write(resp.text)
+file.close()
     
